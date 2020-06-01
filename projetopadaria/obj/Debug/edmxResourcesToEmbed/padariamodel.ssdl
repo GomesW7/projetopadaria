@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sistemapadariaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cadastros">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="nome" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="cpf" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="logradouro" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="numero" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="bairro" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="cidade" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="estado" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="telefone" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="senha" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="pedidos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="encomenda" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="data" Type="date" Nullable="false" />
+    <Property Name="alteracao" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="IDnome" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="login" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="senha" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_cadastros_pedido">
+    <End Role="cadastros" Type="Self.cadastros" Multiplicity="1" />
+    <End Role="cadastros1" Type="Self.cadastros" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="cadastros">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="cadastros1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sistemapadariaModelStoreContainer">
+    <EntitySet Name="cadastros" EntityType="Self.cadastros" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidos" EntityType="Self.pedidos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_cadastros_pedido" Association="Self.FK_cadastros_pedido">
+      <End Role="cadastros" EntitySet="cadastros" />
+      <End Role="cadastros1" EntitySet="cadastros" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
