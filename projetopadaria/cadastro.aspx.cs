@@ -23,7 +23,7 @@ namespace projetopadaria
             string bairro = txtBairro.Text;
             string cidade = txtCidade.Text;
             string estado = txtEstado.Text;
-            double telefone = Convert.ToDouble(txtTelefone.Text);
+            string telefone = txtTelefone.Text;
             //criar conexao banco de dados
             sistemapadariaEntities conexao = new sistemapadariaEntities();
             //criar objeto notas
@@ -36,7 +36,7 @@ namespace projetopadaria
             c.bairro = bairro;
             c.cidade = cidade;
             c.estado = estado;
-            c.telefone = txtTelefone.Text;
+            c.telefone = telefone;
             //insere objeto notas em memoria 
             conexao.cadastros.Add(c);
             //Armazena objeto no banco de Dados (HD)

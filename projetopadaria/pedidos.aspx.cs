@@ -54,7 +54,7 @@ namespace projetopadaria
             //Armazena objeto no banco de Dados (HD)
             conexao.SaveChanges();
             carregarGrig(conexao);
-
+            carregaUsuario(conexao);
         }
         private void carregarGrig(sistemapadariaEntities conexao)
         {
