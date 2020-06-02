@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cadastro.aspx" />
+    <Content Include="cardapio.JPG" />
     <Content Include="css1.css" />
     <Content Include="faleconosco.aspx" />
     <Content Include="localizacao.aspx" />

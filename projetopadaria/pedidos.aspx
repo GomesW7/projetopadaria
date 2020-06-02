@@ -6,13 +6,16 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-</head>
+    </head>
 <body>
     <form id="form1" runat="server">
         <div>
-           <h2>Faça sua Encomenda</h2> <br />
+           <h2>Faça sua Encomenda</h2> 
+            <asp:Image ID="Image1" runat="server" Height="417px" ImageUrl="~/cardapio.JPG" Width="375px" />
             <br />
-            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
+            
+            
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" Enabled="False" />
             <br />
             <asp:Label ID="lblUsuario" runat="server" Text="Usuario"></asp:Label>
             <asp:DropDownList ID="ddlUsuario" runat="server">
@@ -23,6 +26,11 @@
         <br />
         <asp:TextBox ID="txtEncomenda" runat="server" Width="198px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEncomenda" ErrorMessage="Encomenda Obrigatoria" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+        &nbsp;&nbsp;&nbsp; 
+        <br />
+        <br />
+        Digite a quantidade Desejada
+        <asp:TextBox ID="txtQuantidade" runat="server" Width="61px"></asp:TextBox>
         <br />
         <br />
         <br />
@@ -45,13 +53,14 @@
 &nbsp;
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:GridView ID="gridPedidos" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="416px" AutoGenerateColumns="False">
+        <asp:GridView ID="gridPedidos" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="438px" AutoGenerateColumns="False">
             <AlternatingRowStyle BackColor="#CCCCCC" />
             <Columns>
                 <asp:BoundField DataField="cadastros.nome" HeaderText="Nome" />
                 <asp:BoundField DataField="encomenda" HeaderText="Encomenda" />
                 <asp:BoundField DataField="data" HeaderText="Data" />
                 <asp:BoundField DataField="alteracao" HeaderText="Alterações" />
+                <asp:BoundField DataField="quantidade" HeaderText="Quantidade" />
             </Columns>
             <FooterStyle BackColor="#CCCCCC" />
             <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />

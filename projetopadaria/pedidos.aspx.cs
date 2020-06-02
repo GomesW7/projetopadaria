@@ -18,6 +18,7 @@ namespace projetopadaria
                     sistemapadariaEntities conexao = new sistemapadariaEntities();
                     carregarGrig(conexao);
                     carregaUsuario(conexao);
+
                 }
                 else
                 {
@@ -42,6 +43,7 @@ namespace projetopadaria
             string encomenda = txtEncomenda.Text;
             string alteracao = txtAlteracao.Text;
             DateTime data2 = Convert.ToDateTime(txtData.Text);
+            int quantidade = Convert.ToInt32(txtQuantidade.Text);
 
             sistemapadariaEntities conexao = new sistemapadariaEntities();
             pedidos p = new pedidos();
@@ -49,6 +51,7 @@ namespace projetopadaria
             p.encomenda = encomenda;
             p.alteracao = alteracao;
             p.data = data2;
+            p.quantidade = quantidade;
             //insere objeto notas em memoria 
             conexao.pedidos.Add(p);
             //Armazena objeto no banco de Dados (HD)

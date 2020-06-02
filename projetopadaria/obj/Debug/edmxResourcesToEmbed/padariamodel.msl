@@ -29,6 +29,7 @@
     <EntitySetMapping Name="pedidos">
       <EntityTypeMapping TypeName="sistemapadariaModel.pedidos">
         <MappingFragment StoreEntitySet="pedidos">
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
           <ScalarProperty Name="alteracao" ColumnName="alteracao" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="IDnome" ColumnName="IDnome" />

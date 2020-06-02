@@ -49,6 +49,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <NavigationProperty Name="cadastros" Relationship="sistemapadariaModel.FK_pedidos_cadastro" FromRole="pedidos" ToRole="cadastros" />
     <Property Name="alteracao" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="quantidade" Type="Int32" />
   </EntityType>
   <Association Name="FK_cadastros_pedido">
     <End Type="sistemapadariaModel.cadastros" Role="cadastros" Multiplicity="1" />

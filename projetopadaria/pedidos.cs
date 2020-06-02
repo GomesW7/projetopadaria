@@ -19,6 +19,7 @@ namespace projetopadaria
         public Nullable<int> IDnome { get; set; }
         public int ID { get; set; }
         public string alteracao { get; set; }
+        public Nullable<int> quantidade { get; set; }
     
         public virtual cadastros cadastros { get; set; }
     }
