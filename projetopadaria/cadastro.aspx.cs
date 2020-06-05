@@ -56,6 +56,7 @@ namespace projetopadaria
             txtCidade.Text = string.Empty;
             txtEstado.Text = string.Empty;
             txtTelefone.Text = string.Empty;
+            txtSenha.Text = string.Empty;
         }
 
         protected void btnLimpar_Click(object sender, EventArgs e)

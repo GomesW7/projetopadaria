@@ -93,6 +93,7 @@
     </Content>
     <Content Include="pedidos.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WhatsApp-icone.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cadastro.aspx.cs">

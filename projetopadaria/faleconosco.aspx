@@ -12,10 +12,13 @@
         <div>
             <h2>Contatos</h2>
             <br />
-            Telefone: 17 - 35251115 Ligue para agendar Encomendas ou faça Online
+            Telefone: 17 - 35251115 Ligue para agendar Encomendas ou faça Online <li><a href="cadastro.aspx">Cadastro</a></li>&nbsp;&nbsp;
             <br />
+            <li><a href="pedidos.aspx">Pedidos</a></li><br />
             <br />
-            Entre em Contato pelo Whatsapp<br />
+            Entre em Contato pelo Whatsapp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+            <asp:Image ID="Image1" runat="server" Height="107px" ImageUrl="~/WhatsApp-icone.png" Width="125px" />
+            <br />
             <br />
             17 - 996042951<br />
             <br />
