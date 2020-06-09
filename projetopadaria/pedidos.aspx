@@ -10,7 +10,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
-           <h2>Faça sua Encomenda</h2> 
+           <h2>Faça sua Encomenda&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:Label ID="lblUsuarioLogado" runat="server" Font-Underline="True" ForeColor="Black" Text="Label" BackColor="White" BorderColor="Black"></asp:Label>
+&nbsp;&nbsp; &nbsp; (
+               <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+&nbsp;)</h2> 
             <asp:Image ID="Image1" runat="server" Height="417px" ImageUrl="~/cardapio.JPG" Width="375px" />
             <br />
             

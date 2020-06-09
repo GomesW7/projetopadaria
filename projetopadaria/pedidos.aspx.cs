@@ -16,8 +16,11 @@ namespace projetopadaria
                 if (Session["usuario_logado"] != null)
                 {
                     sistemapadariaEntities conexao = new sistemapadariaEntities();
+                    cadastros usuario = (cadastros)Session["usuario_logado"];
+                    lblUsuarioLogado.Text = " Logado como: " + usuario.nome;
                     carregarGrig(conexao);
                     carregaUsuario(conexao);
+
 
                 }
                 else
@@ -54,6 +57,7 @@ namespace projetopadaria
                 p.data = data2;
                 p.quantidade = quantidade;
                 conexao.pedidos.Add(p);
+                carregaUsuario(conexao);
                 limpar();
             }
             else
@@ -123,6 +127,12 @@ namespace projetopadaria
         protected void btnLimpar_Click(object sender, EventArgs e)
         {
             limpar();
+        }
+
+        protected void lbSair_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("Default.aspx");
         }
     }
 }
