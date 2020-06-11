@@ -10,22 +10,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Contatos</h2>
-            <br />
-            Telefone: 17 - 35251115 Ligue para agendar Encomendas ou faça Online <li><a href="cadastro.aspx">Cadastro</a></li>&nbsp;&nbsp;
-            <br />
-            <li><a href="pedidos.aspx">Pedidos</a></li><br />
-            <br />
-            Entre em Contato pelo Whatsapp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
-            <asp:Image ID="Image1" runat="server" Height="107px" ImageUrl="~/WhatsApp-icone.png" Width="125px" />
-            <br />
-            <br />
-            17 - 996042951<br />
-            <br />
-            <br />
-            ou Pelo nosso email : <a href="mailto:padariasaborreal@gmail.com">padariasaborreal@gmail.com</a><br />
-            <br />
-            Envie duvidas, sugestões e Receba nossas Ofertas e Novidades.</div>
+            <div><h1>Contatos</h1></div>
+            <div><h4>Telefone: 17 - 35251115 Ligue para agendar Encomendas ou faça Online</h4> <a href="pedidos.aspx">Pedidos</a></div>
+            <div><h4>Observação: Necessario, Cadastrar-se no Sistema antes de realizar os Pedidos</h4><a href="cadastro.aspx">Cadastro</a></div>
+            <div><h4> Entre em Contato pelo Whatsapp </h4></div>
+            <asp:Image ID="Image1" runat="server" Height="108px" ImageUrl="~/WhatsApp-icone.png" Width="126px" />
+             <div><h4>17 - 996042951</h4></div>
+            <div><h4>ou Pelo nosso email : <a href="mailto:padariasaborreal@gmail.com">padariasaborreal@gmail.com</a></h4></div>
+            <div><h2>Envie duvidas, sugestões e Receba nossas Ofertas e Novidades.</h2></div>
+        </div>
     </form>
 </body>
 </html>
