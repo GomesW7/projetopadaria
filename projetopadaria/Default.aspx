@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-     <div>
+     <div class="quadro">
           <div>
             <h1>PADARIA SABOR REAL</h1>
             <h2>CATANDUVA -SP</h2>

@@ -5,11 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Pedidos</title>
+    <link href="css1.css" rel="stylesheet" />
     </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="quadro">
             <div>
                 &nbsp;<h2>Faça sua Encomenda</h2>
 
@@ -42,7 +43,7 @@
             <div>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtData" ErrorMessage="Data Obrigatoria" ForeColor="Red" ValidationGroup="form">*</asp:RequiredFieldValidator>        
             <h4>Digite a Data que deseja Retirar</h4>
-            <asp:TextBox ID="txtData" runat="server" Width="193px"></asp:TextBox>
+            <asp:TextBox ID="txtData" runat="server" Width="193px" TextMode="Date"></asp:TextBox>
             </div>
             <div>
             <h4> Deseja fazer alguma alteração no Pedido</h4> 
@@ -52,11 +53,11 @@
            <div>
             <asp:Button ID="btnEncomendar" runat="server" Text="Encomendar/Salvar" OnClick="btnEncomendar_Click" ValidationGroup="form" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnAlterar" runat="server" Text="Alterar" Width="88px" OnClick="btnAlterar_Click" />
+            <asp:Button ID="btnAlterar" runat="server" Text="Alterar" Width="125px" OnClick="btnAlterar_Click" />
             &nbsp;&nbsp;
             <asp:Button ID="btnRemover" runat="server" OnClick="btnRemover_Click" Text="Remover" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnLimpar" runat="server" BorderColor="#CCCCCC" ForeColor="Black" OnClick="btnLimpar_Click" Text="Limpar" />
+            <asp:Button ID="btnLimpar" runat="server" BorderColor="#CCCCCC" ForeColor="Black" OnClick="btnLimpar_Click" Text="Limpar" Width="158px" />
            </div>
             <div>
                 <h4>Buscar por Encomenda</h4>
@@ -70,7 +71,7 @@
             <Columns>
                 <asp:BoundField DataField="cadastros.nome" HeaderText="Nome" />
                 <asp:BoundField DataField="encomenda" HeaderText="Encomenda" />
-                <asp:BoundField DataField="data" HeaderText="Data" />
+                <asp:BoundField DataField="data" HeaderText="Data" DataFormatString="{0:dd/MM/yyyy}" />
                 <asp:BoundField DataField="alteracao" HeaderText="Alterações" />
                 <asp:BoundField DataField="quantidade" HeaderText="Quantidade" />
                 <asp:CommandField ShowSelectButton="True" />
