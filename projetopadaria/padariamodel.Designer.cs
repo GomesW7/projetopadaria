@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Luan Carvalho\source\repos\GomesW7\projetopadaria\projetopadaria\padariamodel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Paulo Gomes\source\repos\GomesW7\projetopadaria\projetopadaria\padariamodel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
