@@ -134,5 +134,20 @@ namespace projetopadaria
             Session.RemoveAll();
             Response.Redirect("Default.aspx");
         }
+
+        protected void btnRemover_Click(object sender, EventArgs e)
+        {
+            sistemapadariaEntities conexao = new sistemapadariaEntities();
+            int IDSelecionado = Convert.ToInt32(gridPedidos.SelectedValue.ToString());
+            //recupar objeto banco de dados
+            pedidos encomenda = conexao.pedidos.FirstOrDefault(linha => linha.ID.ToString().Equals(IDSelecionado.ToString()));
+            //remoção regristro
+            conexao.pedidos.Remove(encomenda);
+
+            conexao.SaveChanges();
+
+            carregarGrig(conexao);
+
+        }
     }
 }
