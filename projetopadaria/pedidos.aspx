@@ -66,7 +66,7 @@
                 <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
             </div>
            <div>
-                   <asp:GridView ID="gridPedidos" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="476px" AutoGenerateColumns="False" DataKeyNames="ID">
+                   <asp:GridView ID="gridPedidos" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="438px" AutoGenerateColumns="False" DataKeyNames="ID">
             <AlternatingRowStyle BackColor="#CCCCCC" />
             <Columns>
                 <asp:BoundField DataField="cadastros.nome" HeaderText="Nome" />
@@ -74,7 +74,7 @@
                 <asp:BoundField DataField="data" HeaderText="Data" DataFormatString="{0:dd/MM/yyyy}" />
                 <asp:BoundField DataField="alteracao" HeaderText="Alterações" />
                 <asp:BoundField DataField="quantidade" HeaderText="Quantidade" />
-                <asp:CommandField ShowSelectButton="True" HeaderText="Selecione o Campo Desejado" />
+                <asp:CommandField ShowSelectButton="True" />
             </Columns>
             <FooterStyle BackColor="#CCCCCC" />
             <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />

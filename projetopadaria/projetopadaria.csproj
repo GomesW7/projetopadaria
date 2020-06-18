@@ -78,6 +78,10 @@
     <Content Include="cadastro.aspx" />
     <Content Include="cardapio.JPG" />
     <Content Include="css1.css" />
+    <Content Include="Estilo.css" />
+    <Content Include="Estilos 2.css" />
+    <Content Include="Estilos3.css" />
+    <Content Include="estilos4.css" />
     <Content Include="faleconosco.aspx" />
     <Content Include="localizacao.aspx" />
     <Content Include="Default.aspx" />
