@@ -12,14 +12,14 @@
     <form id="form1" runat="server">
         <div class="quadro">
             <div>
-                &nbsp;<h2>Faça sua Encomenda</h2>
+              <h1>Faça sua Encomenda</h1>
 
             </div>
             <div>
                <asp:Label ID="lblUsuarioLogado" runat="server" Font-Underline="True" ForeColor="Black" Text="Label" BackColor="White" BorderColor="Black"></asp:Label>
             </div>
             <div>
-                <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+                <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click"><h3>Sair</h3></asp:LinkButton>
             </div>
             <div>
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="form" />
@@ -55,39 +55,39 @@
             &nbsp;&nbsp;
             <asp:Button ID="btnAlterar" runat="server" Text="Alterar" Width="125px" OnClick="btnAlterar_Click" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnRemover" runat="server" OnClick="btnRemover_Click" Text="Remover" />
+            <asp:Button ID="btnRemover" runat="server" OnClick="btnRemover_Click" Text="Remover" BorderColor="#CCCCCC" />
             &nbsp;&nbsp;
-            <asp:Button ID="btnLimpar" runat="server" BorderColor="#CCCCCC" ForeColor="Black" OnClick="btnLimpar_Click" Text="Limpar" Width="158px" />
+               <asp:Button ID="btnLimpar" runat="server" Text="Limpar" />
            </div>
             <div>
                 <h4>Buscar por Encomenda</h4>
                 <asp:TextBox ID="txtBuscar" runat="server" Width="225px"></asp:TextBox>
                 &nbsp;&nbsp;
                 <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
+                <asp:GridView ID="gridPedidos" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="222px" AutoGenerateColumns="False" DataKeyNames="ID" style="margin-left: 0px; margin-right: 0px">
+                    <AlternatingRowStyle BackColor="White" />
+                    <Columns>
+                        <asp:BoundField DataField="cadastros.nome" HeaderText="Nome" />
+                        <asp:BoundField DataField="encomenda" HeaderText="Encomenda" />
+                        <asp:BoundField DataField="data" HeaderText="Data" DataFormatString="{0:dd/MM/yyyy}" />
+                        <asp:BoundField DataField="alteracao" HeaderText="Alterações" />
+                        <asp:BoundField DataField="quantidade" HeaderText="Quantidade" />
+                        <asp:CommandField ShowSelectButton="True" HeaderText="Selecione o Campo Desejado" />
+                    </Columns>
+                    <EditRowStyle BackColor="#2461BF" />
+                    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EFF3FB" />
+                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                    <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                    <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                    <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                </asp:GridView>
+                <div>
+                </div>
             </div>
-           <div>
-                   <asp:GridView ID="gridPedidos" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="476px" AutoGenerateColumns="False" DataKeyNames="ID">
-            <AlternatingRowStyle BackColor="#CCCCCC" />
-            <Columns>
-                <asp:BoundField DataField="cadastros.nome" HeaderText="Nome" />
-                <asp:BoundField DataField="encomenda" HeaderText="Encomenda" />
-                <asp:BoundField DataField="data" HeaderText="Data" DataFormatString="{0:dd/MM/yyyy}" />
-                <asp:BoundField DataField="alteracao" HeaderText="Alterações" />
-                <asp:BoundField DataField="quantidade" HeaderText="Quantidade" />
-                <asp:CommandField ShowSelectButton="True" HeaderText="Selecione o Campo Desejado" />
-            </Columns>
-            <FooterStyle BackColor="#CCCCCC" />
-            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F1F1F1" />
-            <SortedAscendingHeaderStyle BackColor="#808080" />
-            <SortedDescendingCellStyle BackColor="#CAC9C9" />
-            <SortedDescendingHeaderStyle BackColor="#383838" />
-            </asp:GridView>
-               <div>
-               </div>
-           </div>
       </div>
     </form>
 </body>

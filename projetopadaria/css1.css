@@ -1,1 +1,67 @@
-﻿
+﻿input[type=text], input[type=password] {
+    padding: 8px 20px;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-family: Rockwell;
+}
+input[type=date] {
+    padding: 8px 20px;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-family: Rockwell;
+}
+
+
+input[type=submit] {
+    background-color:Highlight;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-family: Rockwell;
+}
+
+    input[type=submit]:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+
+span {
+    font-weight: bold;
+    font-family: Rockwell;
+}
+
+body {
+    background-image: url('paes.jpg');
+    background-size: 100%;
+}
+
+.quadro {
+    background-color:white;
+    border: black solid 2px;
+    border-radius: 4px;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+h1 {
+    font-weight: bold;
+    font-family: Rockwell;
+}
+h2 {
+    font-weight: bold;
+    font-family: Rockwell;
+}
+h3 {
+    font-weight: bold;
+    font-family: Rockwell;
+}
+h4 {
+    font-weight: bold;
+    font-family: Rockwell;
+}

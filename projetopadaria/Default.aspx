@@ -12,14 +12,17 @@
     <form id="form1" runat="server">
      <div class="quadro">
           <div>
-            <h1>PADARIA SABOR REAL</h1>
+            <h1>PADARIA SABOR REAL <asp:Image ID="Image1" runat="server" Height="107px" ImageUrl="~/images.jpg" Width="118px" />
+             
+              </h1>
+             
             <h2>CATANDUVA -SP</h2>
             </div>
      
            <div>
            <h3>Bem vindo ao Sistema Padaria</h3>
            <h4>Navegue pelo Menu de Acesso Abaixo.</h4>
-           <a href="cadastro.aspx">Cadastro</a> <a href="pedidos.aspx">Pedidos</a> <a href="faleconosco.aspx">Fale Conosco</a> <a href="localizacao.aspx">Localização</a>
+           <a href="cadastro.aspx"><h3>Cadastro</h3></a> <a href="pedidos.aspx"><h3>Pedidos</h3></a> <a href="faleconosco.aspx"><h3>Fale Conosco</h3></a> <a href="localizacao.aspx"><h3>Localização</h3></a>
            </div>
             <div>
               <h3>Faça seu Login.</h3>

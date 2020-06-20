@@ -79,6 +79,7 @@
     <Content Include="cardapio.JPG" />
     <Content Include="css1.css" />
     <Content Include="faleconosco.aspx" />
+    <Content Include="images.jpg" />
     <Content Include="localizacao.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="padariamodel.Context.tt">
@@ -91,6 +92,7 @@
       <DependentUpon>padariamodel.edmx</DependentUpon>
       <LastGenOutput>padariamodel.cs</LastGenOutput>
     </Content>
+    <Content Include="paes.jpg" />
     <Content Include="pedidos.aspx" />
     <Content Include="Web.config" />
     <Content Include="WhatsApp-icone.png" />

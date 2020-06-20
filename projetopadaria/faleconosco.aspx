@@ -6,13 +6,14 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Fale Conosco</title>
+    <link href="css1.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+         <div class="quadro">
             <div><h1>Contatos</h1></div>
-            <div><h4>Telefone: 17 - 35251115 Ligue para agendar Encomendas ou faça Online</h4> <a href="pedidos.aspx">Pedidos</a></div>
-            <div><h4>Observação: Necessario, Cadastrar-se no Sistema antes de realizar os Pedidos</h4><a href="cadastro.aspx">Cadastro</a></div>
+            <div><h4>Telefone: 17 - 35251115 Ligue para agendar Encomendas ou faça Online</h4> <a href="pedidos.aspx"><h3>Pedidos</h3></a></div>
+            <div><h4>Observação: Necessario, Cadastrar-se no Sistema antes de realizar os Pedidos</h4><a href="cadastro.aspx"><h3>Cadastro</h3></a></div>
             <div><h4> Entre em Contato pelo Whatsapp </h4></div>
             <asp:Image ID="Image1" runat="server" Height="108px" ImageUrl="~/WhatsApp-icone.png" Width="126px" />
              <div><h4>17 - 996042951</h4></div>
