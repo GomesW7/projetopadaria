@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\packages",
+    "\\projetopadaria"
   ],
-  "SelectedNode": "\\projetopadaria.sln",
+  "SelectedNode": "\\packages",
   "PreviewInSolutionExplorer": false
 }
